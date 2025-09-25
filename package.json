@@ -1,0 +1,56 @@
+{
+  "name": "@discosea/kitchen",
+  "version": "1.0.33",
+  "description": "This package builds Solana Instructions to merge multiple SPL tokens into one.",
+  "main": "src/index.js",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./src/index.cjs"
+  },
+  "module": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "echo 'No build step required for JavaScript-only package'",
+    "prepublishOnly": "npm test",
+    "test": "mocha tests --recursive",
+    "test:watch": "mocha tests --watch"
+  },
+  "files": [
+    "src/",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "solana",
+    "blockchain",
+    "web3",
+    "transaction",
+    "spl-token",
+    "merge"
+  ],
+  "author": {
+    "name": "azuldev",
+    "email": "azuldevgames@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "azuldev",
+      "email": "azuldevgames@gmail.com"
+    }
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/redazul"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-token": "^0.3.0",
+    "@solana/web3.js": "^1.98.0",
+    "bn.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0"
+  }
+}
